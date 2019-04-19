@@ -1,0 +1,127 @@
+
+/* 双清 */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 公共样式 */
+/* 版心 */
+.w{
+    width: 1040px;
+}
+.box{
+    /* background-color: pink; */
+    position: relative;
+    left: 50%;
+    margin-left: -520px;
+}
+li{
+    list-style: none;
+}
+body{
+    background-color: #ECECEA;
+}
+
+/* top start */
+.top{
+    height: 360px;
+    position: relative;
+}
+.top .bgi{
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/topbgi.png");
+    /* 设置背景图片大小 */
+    background-size: 1040px 360px;
+    opacity: 0.5;
+    position: absolute;
+}
+.top .result{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font: 700 50px/40px "宋体";
+    line-height: 360px;
+    position: absolute;
+}
+/* top end */
+
+/* main start */
+.main{
+    margin-top: 60px;
+    height: auto;
+    min-height: 300px;
+    position: relative;
+    /* background-color: pink; */
+}
+.main div{
+    display: inline-block;
+}
+
+    /* roster start */
+.main .roster{
+    position: absolute;
+    left: 0;
+    width: 700px;
+    /* background-color: #ccc; */
+}
+.main .roster span{
+    position: absolute;
+    top: 25px;
+    width: 10px;
+    height: 100px;
+    /* background-color: yellow; */
+    line-height: 30px;
+    margin-left: 80px;
+    font: 700 20px/40px "宋体";
+}
+.main .roster table{
+    margin-left: 168px;
+    margin-top: 50px;
+    /* background-color: orange; */
+}
+.main .roster tr{
+    /* background-color: blue; */
+    display: block;
+    overflow: hidden;
+}
+.main .roster td{
+    /* background-color: red; */
+    text-align: center;
+    float: left;
+    padding: 0 0 15px 12px;
+    font: 400 15px "宋体";
+}
+    /* roster end */
+
+    /* choose-box start */  
+.main .choose-box{
+    position: absolute;
+    right: 0;
+    width: 300px;
+    /* background-color: green; */
+}
+.main .choose-box .btn{
+    position: relative;
+    top: 20px;
+    /* left: 50%;
+    margin-left: -75px; */
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    font: 700 20px/40px "宋体";
+    outline: none;
+}
+.main .choose-box ul {
+    margin-top: 45px;
+}
+.main .choose-box li {
+    float: left;
+    width: 10px;
+    margin-right: 48px;
+    line-height: 30px;
+    font: 400 15px "宋体";
+}
+    /* choose-box end */
+
+/* main end */

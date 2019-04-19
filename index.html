@@ -3,165 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>点名册</title>
-    <style>
-        /* 双清 */
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        /* 公共样式 */
-        /* 版心 */
-        .w{
-            width: 1040px;
-        }
-        .box{
-            /* background-color: pink; */
-            position: relative;
-            left: 50%;
-            margin-left: -520px;
-        }
-        li{
-            list-style: none;
-            float: left;
-        }
-        body{
-            background-color: #ECECEA;
-        }
-
-        /* top start */
-        .top{
-            height: 360px;
-            position: relative;
-        }
-        .top .bgi{
-            width: 100%;
-            height: 100%;
-            background-image: url("images/topbgi.png");
-            /* 设置背景图片大小 */
-            background-size: 1040px 360px;
-            opacity: 0.5;
-            position: absolute;
-        }
-        .top .result{
-            width: 100%;
-            height: 100%;
-            text-align: center;
-            font-size: 50px;
-            line-height: 360px;
-            position: absolute;
-        }
-        /* top end */
-        
-        /* main start */
-        .main{
-            margin-top: 60px;
-            /* background-color: pink; */
-        }
-        .main div{
-            display: inline-block;
-        }
-        
-            /* roster start */
-        .main .roster{
-            position: relative;
-            width: 700px;
-            background-color: #ccc;
-        }
-        .main .roster ul{
-            margin-left: 168px;
-            margin-top: 50px;
-            /* background-color: orange; */
-            height: auto;
-            min-height: 200px;
-            overflow: hidden;
-        }
-        .main .roster span{
-            position: absolute;
-            top: 25px;
-            width: 10px;
-            height: 100px;
-            /* background-color: yellow; */
-            line-height: 30px;
-            margin-left: 80px;
-            font: 700 20px/40px "宋体";
-        }
-        .main .roster li{
-            text-align: center;
-            padding: 0 0 15px 12px;
-            font: 400 15px "宋体";
-        }
-            /* roster end */
-
-            /* choose-box start */  
-        .main .choose-box{
-
-            width: 200px;
-            background-color: green;
-        }
-        .main .choose-box .btn{
-            width: 100px;
-            height: 75px;
-
-        }
-            /* choose-box end */
-
-        /* main end */
-        
-
-    </style>
+    <link rel="stylesheet" href="css/index.css" />
 </head>
 <body>
     <div class="box w">
         
         <div class="top w" id="top">
             <div class="bgi"></div>
-            <div class="result" id="result">展示结果区域</div>
+            <table class="result" id="result">
+                <!-- 展示结果区域 -->
+                <tbody>
+                    <tr>
+                        <td>展示结果区域</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- <div class="result" id="result">展示结果区域</div> -->
         </div>
         <div class="main w">
             <div class="roster" id="roster">
                 <span>花名册</span>
-                <ul>
-                    <li>花名册</li>
-                    <li>花名册</li>
-                    <li>花名册</li>
-                    <li>花名册</li>
-                    <li>花名册</li>
-                    <li>花名册</li>
-                    <li>花名册</li>
-                    <li>花名册</li>
-                    <li>花名册</li>
-                    <li>花名册</li>
-                    <li>花名册</li>
-                    <li>花名册</li>
-                    <li>花名册</li>
-                    <li>花名册</li>
-                    <li>花名册</li>
-                </ul>
+                <table>
+                    <!-- 每行展示12个名字 -->
+                </table>
             </div>
-            <div class="choose-box" id="choose-box">
+            <div class="choose-box" id="chooseBox">
                 <input type="button" class="btn" id="btn" value="开始" />
                 <ul>
-                    <li><input type="checkbox" name="" id="">条件1</li>
-                    <li><input type="checkbox" name="" id="">条件1</li>
-                    <li><input type="checkbox" name="" id="">条件1</li>
-                    <li><input type="checkbox" name="" id="">条件1</li>
-                    <li><input type="checkbox" name="" id="">条件1</li>
-                    <li><input type="checkbox" name="" id="">条件1</li>
-                    <li><input type="checkbox" name="" id="">条件1</li>
-                    <li><input type="checkbox" name="" id="">条件1</li>
-                    <li><input type="checkbox" name="" id="">条件1</li>
-                    <li><input type="checkbox" name="" id="">条件1</li>
-                    <li><input type="checkbox" name="" id="">条件1</li>
+                    <li><input type="radio" name="condition" id="ck1" checked="checked"><br/><br/>随机选取1位</li>
+                    <li><input type="radio" name="condition" id="ck2"><br/><br/>随机选取3位</li>
+                    <li><input type="radio" name="condition" id="ck3"><br/><br/>随机选取1行</li>
+                    <li><input type="radio" name="condition" id="ck4"><br/><br/>随机选取1列</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- ============================= -->
+    <!-- ==============js区域=============== -->
     <script src="js/common.js"></script>
-    <script>
-        // 获取所需要的元素
-        
-    </script>
+    <script src="js/index.js"></script>
 </body>
 </html>
